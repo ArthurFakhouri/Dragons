@@ -1,0 +1,28 @@
+.not-found-content {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-box {
+  flex: 1;
+  max-width: 400px;
+  min-width: 200px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 250px;
+}
+
+.fourofour {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
