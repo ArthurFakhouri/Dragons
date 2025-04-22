@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+### 🌐 PT-BR
+#### [EN-US](https://github.com/ArthurFakhouri/Dragons/blob/main/READMEEN.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+    <img alt="dragons" title="#dragons" src=".github/logo.svg" width="250px" />
+</div>
 
-Currently, two official plugins are available:
+<h4 align="center"> 
+	:heavy_check_mark: 🚀 Dragons 🚀 :heavy_check_mark:
+</h4>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#%EF%B8%8F-demonstração">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-## Expanding the ESLint configuration
+## 🈸 Projeto
+Dragons é um projeto desenvolvido durante um teste.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<b>Telas:</b>
+- [✅]  Login
+    - [✅]  Validação se login existe
+    - [✅]  Redirecionamento para rota autenticada caso usuário já esteja logado
+- [✅]  Lista de dragões
+    - [✅]  Opção de clique no card para ir para os detalhes do dragão
+    - [✅]  Botão para ir para o registro de dragões
+    - [✅]  Exibição de componente vazio caso a lista esteja vazia
+    - [✅]  Botão para editar um dragão
+    - [✅]  Botão para remover um dragão
+- [✅]  Detalhes de um dragão
+- [✅]  Registro de dragão
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔧 Como executar
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Web
+Vá para a pasta em que você clonou o projeto, abra o terminal e execute os comandos para rodar a aplicação:
+- 02 - npm i -g pnpm (Instalação do pnpm globalmente)
+- 03 - pnpm i
+- 05 - pnpm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+OBS: O usuário disponível para acessar o sistema é:
+Usuário: admin
+Senha: admin
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📽️ Demonstração
+
+
+
+
+
+
+## 🚀 Tecnologias
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+Web:
+- [<img alt="" src="https://react.dev/favicon.ico" width="16px" /> React](https://react.dev)
+- [<img alt="" src="https://vite.dev/logo.svg" width="16px" /> Vite](https://react.dev)
+- [<img alt="" src="https://reactrouter.com/favicon-dark.png" width="16px" /> React Router](https://react.dev)
+- [<img alt="" src="https://react-hook-form.com/images/logo/react-hook-form-logo-only.png" width="16px" /> React Hook Form](https://react-hook-form.com/)
+- [<img alt="" src="https://axios-http.com/assets/favicon.ico" width="16px" /> Axios](https://axios-http.com/)
+- [<img alt="" src="https://biomejs.dev/img/favicon.svg" width="16px" /> Biome](https://biomejs.dev)
+- [<img alt="" src="https://sass-lang.com/icon.png" width="16px" /> SCSS](https://tailwindcss.com)
+- [<img alt="" src="https://www.typescriptlang.org/favicon.ico" width="16px" /> Typescript](https://www.typescriptlang.org)
+- [<img alt="" src="https://react-icons.github.io/react-icons/favicon.png" width="16px" /> React Icons](https://phosphoricons.com)
+- [<img alt="" src="https://zod.dev/static/favicon.ico" width="16px" /> Zod](https://zod.dev/)
+
+## :memo: Licença
+Este projeto está sob a licença do MIT. Consulte a [LICENÇA](LICENSE) para obter detalhes.
+
