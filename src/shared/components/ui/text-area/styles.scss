@@ -1,0 +1,47 @@
+.textarea-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.textarea {
+  width: 100%;
+
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 8px;
+  min-height: 100px;
+
+  resize: none;
+  outline: 0;
+
+  &:focus {
+    border-color: $orange;
+  }
+}
+
+.feedback {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.error {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  color: $gray-600;
+  font-size: 0.75rem;
+
+  .error-icon {
+    color: $orange;
+  }
+}
+
+.maxChar {
+  font-size: 0.75rem;
+  width: fit-content;
+  color: $gray-600;
+}
