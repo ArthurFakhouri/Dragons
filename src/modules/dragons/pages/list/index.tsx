@@ -11,7 +11,9 @@ export function DragonsList() {
 
   const {
     isLoading,
-    listDragons
+    listDragons,
+    setListDragons,
+    handleRegisterDragon,
   } = useListDragon()
 
   return (
@@ -19,7 +21,7 @@ export function DragonsList() {
     >
       <div className="list-content-header">
         <strong className="list-content-header-title">Lista de dragões</strong>
-        <Button className="register-dragon">
+        <Button className="register-dragon" onClick={handleRegisterDragon}>
           <PiPlusBold size={20} />
           Cadastrar dragão
         </Button>
@@ -34,11 +36,13 @@ export function DragonsList() {
           {listDragons.sort((dragonOdd, dragonEven) => dragonOdd.name.localeCompare(dragonEven.name)).map((dragon) => (
             <Card
               key={dragon.id}
+              id={dragon.id}
               as="li"
               title={dragon.name}
               type={dragon.type.toLowerCase().trim() as keyof typeof dragonTypes}
               histories={dragon.histories}
               createdAt={dragon.createdAt}
+              updateList={setListDragons}
             />
           ))}
         </ul>

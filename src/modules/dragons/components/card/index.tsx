@@ -2,27 +2,42 @@ import { Box } from "@/components/ui/box";
 import './styles.scss'
 import { Button } from "@/components/ui/button";
 import { dragonTypes } from "@/constants/dragon-types";
+import type { DragonProps } from "@/shared/types/dragons";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";
+import type { SetStateAction } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { GiSpikedDragonHead } from "react-icons/gi";
 import { PiPencilFill, PiTrash } from "react-icons/pi";
+import { useCard } from "../../hooks/useCard";
 
 type CardProps = {
   as?: keyof HTMLElementTagNameMap
+  id: string
   title: string
   type: keyof typeof dragonTypes
   createdAt: string
   histories: string[]
+  updateList: (list: SetStateAction<DragonProps[]>) => void
 }
 
 export function Card({
   as = 'div',
+  id,
   title,
   type,
   createdAt,
   histories,
+  updateList,
 }: CardProps) {
+
+  const {
+    isLoading,
+    handleEditDragon,
+    handleDeleteDragon,
+  } = useCard({
+    updateList,
+  })
 
   const {
     title: typeTitle,
@@ -57,10 +72,18 @@ export function Card({
           </div>
         </div>
         <div className="card-data-actions">
-          <Button className="edit">
+          <Button
+            className="edit"
+            onClick={() => handleEditDragon(id)}
+            disabled={isLoading}
+          >
             <PiPencilFill size={20} />
           </Button>
-          <Button className="delete">
+          <Button
+            className="delete"
+            onClick={() => handleDeleteDragon(id)}
+            disabled={isLoading}
+          >
             <PiTrash size={20} />
           </Button>
         </div>
