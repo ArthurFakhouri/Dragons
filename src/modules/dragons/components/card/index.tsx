@@ -35,6 +35,7 @@ export function Card({
     isLoading,
     handleEditDragon,
     handleDeleteDragon,
+    handleDragonDetails,
   } = useCard({
     updateList,
   })
@@ -47,7 +48,7 @@ export function Card({
   }
 
   return (
-    <Box as={as} className="card-box">
+    <Box as={as} className="card-box" onClick={() => handleDragonDetails(id)}>
       <GiSpikedDragonHead className="card-icon" />
       <div className="card-data">
         <div className="card-data-content">
@@ -74,14 +75,14 @@ export function Card({
         <div className="card-data-actions">
           <Button
             className="edit"
-            onClick={() => handleEditDragon(id)}
+            onClick={(e) => handleEditDragon(e, id)}
             disabled={isLoading}
           >
             <PiPencilFill size={20} />
           </Button>
           <Button
             className="delete"
-            onClick={() => handleDeleteDragon(id)}
+            onClick={(e) => handleDeleteDragon(e, id)}
             disabled={isLoading}
           >
             <PiTrash size={20} />

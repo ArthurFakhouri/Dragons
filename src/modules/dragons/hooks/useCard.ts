@@ -1,6 +1,6 @@
 import { deleteDragon } from '@/api/delete-dragon'
 import type { DragonProps } from '@/shared/types/dragons'
-import { type SetStateAction, useState } from 'react'
+import { type MouseEvent, type SetStateAction, useState } from 'react'
 import { useNavigate } from 'react-router'
 
 type UseCardProps = {
@@ -12,11 +12,20 @@ export function useCard({ updateList }: UseCardProps) {
 
   const [isLoading, setIsLoading] = useState(false)
 
-  function handleEditDragon(id: string) {
+  function handleDragonDetails(id: string) {
+    navigate(`/dragons/details/${id}`)
+  }
+
+  function handleEditDragon(event: MouseEvent<HTMLButtonElement>, id: string) {
+    event.stopPropagation()
     navigate(`/dragons/register/${id}`)
   }
 
-  async function handleDeleteDragon(id: string) {
+  async function handleDeleteDragon(
+    event: MouseEvent<HTMLButtonElement>,
+    id: string
+  ) {
+    event.stopPropagation()
     setIsLoading(true)
     try {
       await deleteDragon(id)
@@ -37,5 +46,6 @@ export function useCard({ updateList }: UseCardProps) {
     isLoading,
     handleEditDragon,
     handleDeleteDragon,
+    handleDragonDetails,
   }
 }

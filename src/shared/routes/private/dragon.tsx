@@ -1,3 +1,4 @@
+import { DragonsDetails } from "@/modules/dragons/pages/details";
 import { DragonsList } from "@/modules/dragons/pages/list";
 import { DragonsRegister } from "@/modules/dragons/pages/register";
 import { AuthenticatedLayout } from "@/shared/layouts/authenticated";
@@ -7,6 +8,6 @@ export const dragonRoutes = (
   <Route path="dragons" element={<AuthenticatedLayout />}>
     <Route path="list" element={<DragonsList />} />
     <Route path="register/:id" element={<DragonsRegister />} />
-    <Route path="details" />
+    <Route path="details/:id" element={<DragonsDetails />} />
   </Route>
 )
