@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 import './styles.scss'
 
 type ButtonProps = {
-  variant?: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary' | 'tertiary'
 } & ComponentProps<'button'>
 
 export function Button({

@@ -1,0 +1,12 @@
+.link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: $orange;
+  text-decoration: underline;
+
+  transition: 0.3s filter;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}

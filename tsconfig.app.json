@@ -28,14 +28,26 @@
       "@/modules/*": [
         "./src/modules/*"
       ],
+      "@/api/*": [
+        "src/shared/api/*"
+      ],
+      "@/components/*": [
+        "src/shared/components/*"
+      ],
+      "@/constants/*": [
+        "src/shared/constants/*"
+      ],
+      "@/ui/*": [
+        "src/shared/components/ui/*"
+      ],
       "@/assets/*": [
-        "./src/assets/*"
+        "./src/shared/assets/*"
       ],
       "@/theme/*": [
-        "./src/theme/*"
+        "./src/shared/theme/*"
       ],
       "@/routes/*": [
-        "./src/routes/*"
+        "src/shared/routes/*"
       ],
       "@/*": [
         "./src/*"

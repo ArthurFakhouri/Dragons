@@ -1,8 +1,10 @@
 .input-content {
   display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   position: relative;
 
-  &:focus-within {
+  &:focus-within .input-box {
     .filled-circle {
       background-color: $orange;
     }
@@ -15,6 +17,13 @@
       color: $orange;
     }
   }
+}
+
+.input-box {
+  position: relative;
+
+  display: flex;
+  width: 100%;
 }
 
 .filled-circle {
@@ -52,11 +61,17 @@
 
   bottom: 0;
   right: 0;
+}
 
-  border: 0;
-  background-color: transparent;
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 
-  &:hover {
-    cursor: pointer;
+  color: $gray-600;
+  font-size: 0.75rem;
+
+  .error-icon {
+    color: $orange;
   }
 }
