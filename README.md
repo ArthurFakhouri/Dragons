@@ -31,7 +31,13 @@ Dragons é um projeto desenvolvido durante um teste.
     - [✅]  Botão para editar um dragão
     - [✅]  Botão para remover um dragão
 - [✅]  Detalhes de um dragão
+    - [✅]  Exibir nome do dragão
+    - [✅]  Exibir tipo do dragão
+    - [✅]  Exibir data de criação do dragão
+    - [✅]  Exibir histórias 
 - [✅]  Registro de dragão
+    - [✅] Criação e edição de um dragão(nome, tipo e histórias)
+    - [✅] Validação do formulário 
 
 ## 🔧 Como executar
 
