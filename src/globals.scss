@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $gray-700;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 87.5%;
+  }
+}
+
+body,
+button,
+span {
+  font-family: "MedievalSharp", cursive;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+}
