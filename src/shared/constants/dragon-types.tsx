@@ -10,7 +10,7 @@ export const dragonTypes = {
     title: 'Fogo',
     icon: <FaFire size={24} style={{ color: '#e32d18' }} />
   },
-  water: {
+  agua: {
     title: 'Água',
     icon: <IoIosWater size={24} style={{ color: '#1847e3' }} />
   },

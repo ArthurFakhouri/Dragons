@@ -19,7 +19,7 @@ export function DragonsDetails() {
 
   if (isLoading || dragonDetails === null) return <Loading className='details-loading' />
 
-  const type = dragonDetails.type.toLowerCase()
+  const type = dragonDetails.type.toLowerCase().trim()
 
   const {
     title: typeTitle,
