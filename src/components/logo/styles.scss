@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .icon {
+    color: $orange;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
