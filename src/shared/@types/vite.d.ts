@@ -3,7 +3,7 @@
 interface ImportMetaEnv {
   readonly VITE_USER: string
   readonly VITE_PASSWORD: string
-  // more env variables...
+  readonly VITE_API: string
 }
 
 interface ImportMeta {
