@@ -1,0 +1,13 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  animation: spin 1s infinite linear;
+  color: $gray-600;
+}
