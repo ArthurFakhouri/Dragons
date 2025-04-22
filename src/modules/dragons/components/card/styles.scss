@@ -1,0 +1,135 @@
+.card-box {
+  padding: 0;
+
+  align-items: center;
+  overflow: hidden;
+
+  transition: 0.3s transform;
+
+  &:hover {
+    cursor: pointer;
+    transform: translate(5px, -5px);
+  }
+}
+
+.card-icon {
+  margin-top: 1rem;
+  color: $orange;
+  min-width: 150px;
+  height: 50px;
+}
+
+.card-data {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-data-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 0.5rem;
+}
+
+.card-data-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-data-header-title {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card-data-header-created {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  gap: 0.25rem;
+}
+
+.card-data-header-created-text {
+  font-size: 0.75rem;
+  color: $gray-600;
+}
+
+.card-data-header-date {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.825rem;
+  color: $gray-700;
+
+  & > svg {
+    color: $gray-600;
+  }
+}
+
+.card-data-type {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.card-data-type-text {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-data-description {
+  font-family: "Open Sans", sans-serif;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.card-data-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  padding: 0.25rem 0.5rem;
+  align-items: center;
+  background-color: $gray-100;
+}
+
+.edit {
+  color: $yellow;
+  background-color: transparent;
+  border-radius: 100%;
+
+  width: 28px;
+  height: 28px;
+
+  transition: 0.3s background, 0.3s color;
+
+  &:hover {
+    filter: none !important;
+    background-color: $yellow;
+    color: $white;
+  }
+}
+
+.delete {
+  color: $red;
+  background-color: transparent;
+  border-radius: 100%;
+
+  width: 28px;
+  height: 28px;
+
+  transition: 0.3s background, 0.3s color;
+
+  &:hover {
+    filter: none !important;
+    background-color: $red;
+    color: $white;
+  }
+}

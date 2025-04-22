@@ -12,9 +12,17 @@
 
   transition: 0.3s filter;
 
-  &:hover {
+  &:not(:disabled):hover {
     filter: brightness(85%);
     cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+
+    &:hover {
+      cursor: not-allowed;
+    }
   }
 }
 

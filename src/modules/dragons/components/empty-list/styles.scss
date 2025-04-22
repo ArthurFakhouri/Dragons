@@ -1,0 +1,21 @@
+.empty-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: $gray-700;
+}
+
+.empty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.empty-icon {
+  color: $orange;
+}
