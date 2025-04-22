@@ -30,8 +30,14 @@ Dragons is a project developed during a test.
   - [✅] Display of empty component if the list is empty
   - [✅] Button to edit a dragon
   - [✅] Button to remove a dragon
-- [✅] Details of a dragon
-- [✅] Dragon registry
+- [✅] Dragon details
+  - [✅] Show dragon name
+  - [✅] Show dragon type
+  - [✅] Show dragon creation date
+  - [✅] Show stories
+- [✅] Dragon log
+  - [✅] Creating and editing a dragon (name, type and stories)
+  - [✅] Form validation
 
 ## 🔧 How to run
 
