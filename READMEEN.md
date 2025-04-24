@@ -54,6 +54,10 @@ Password: admin
 ## 📽️ Demo
 
 
+https://github.com/user-attachments/assets/3756a808-c05c-42e2-a87b-72b89e0f82e6
+
+
+
 
 
 
